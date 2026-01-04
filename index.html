@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiran Patil - Portfolio</title>
+
+  <!-- Google Fonts: JetBrains Mono (Developer Font) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" href="images/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <!-- iOS Home Screen icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+  <!-- Android / PWA -->
+  <link rel="manifest" href="images/site.webmanifest">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..204,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome & Devicon for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="preloader-active">
+  <!-- Start with preloader active -->
+
+  <div id="tapHint"></div>
+
+  <img src="images/—Pngtree—3d ufo spaceship with lights_20363689.png" class="ufo" id="ufo" />
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <h1 id="preloader-text"></h1>
+      <form class="preloader-form" id="preloader-form">
+        <input type="text" id="visitor-name" class="preloader-input" placeholder="What's your name?" required />
+        <button type="submit" class="preloader-button">Enter</button>
+        <a href="#" id="preloader-skip-btn" class="preloader-skip">Skip?</a>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <canvas id="meteorCanvas"></canvas>
+
+    <header class="header" id="header">
+      <nav class="navbar ">
+        <a href="#" class="nav-logo">Kiran<span>.</span></a>
+
+        <!-- DESKTOP MENU -->
+        <ul class="nav-menu-desktop">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#hosting">Hosting</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- MOBILE DROPDOWN -->
+        <ul class="nav-menu-mobile" id="nav-menu-mobile">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section (REDESIGNED 2-COLUMN) -->
+      <section class="hero-section container" id="hero">
+        <!-- Left Column -->
+        <div class="hero-left-column">
+          <div class="hero-text">
+            <h1 id="hero-name-reveal"></h1>
+            <!-- Name will be injected by JS -->
+            <h2 id="hero-role-typewriter"></h2>
+          </div>
+          <div class="about-me-box">
+            <h2 class="hero-text">About Me</h2>
+            I’m a degree-pursuing student with a passion for UI design and creating smooth animations that
+            make interfaces feel alive (and occasionally test my patience). I’m on a journey to become a
+            Java Full Stack Developer, learning to balance creative frontend design with logical backend
+            development. I enjoy working in teams, sharing ideas, and solving real world problems together.
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="hero-right-column">
+          <div class="hero-image-container">
+            <div class="image-border-box">
+              <img src="images/unnamed (1).jpg" class="hero-image" alt="Kiran Balaso Patil" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container animate-on-scroll" id="project-showcase">
+
+        <h2 class="section-title">Project Overview</h2>
+        <div class="project-showcase-grid">
+
+          <div class="showcase-card">
+            <div class="showcase-number" data-target="6">0</div>
+            <h3 class="showcase-title">Team Projects</h3>
+            <p class="showcase-text">
+              Projects developed collaboratively with teams
+            </p>
+          </div>
+
+          <div class="showcase-card">
+            <div class="showcase-number" data-target="2">0</div>
+            <h3 class="showcase-title">Solo Projects</h3>
+            <p class="showcase-text">
+              Independently designed and developed projects
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="social-showcase">
+        <h2 class="section-title">GitHub Stats</h2>
+
+        <div class="social-showcase-wrapper">
+          <!-- GitHub Stats -->
+          <div class="github-box">
+            <img
+              src="https://kiranbalasopatil.vercel.app/api/top-langs/?username=KiranBalasoPatil3052006&layout=compact&theme=tokyonight"
+              alt="GitHub Stats" />
+          </div>
+
+          <div class="github-box">
+            <img
+              src=" https://kiranbalasopatil.vercel.app/api?username=KiranBalasoPatil3052006&show_icons=true&theme=tokyonight"
+              alt="Kiran's GitHub Stats" />
+          </div>
+
+
+        </div>
+      </section>
+      <section class="section container" id="social-showcase">
+        <h2 class="section-title">LinkedIn Platform</h2>
+
+        <!-- LinkedIn Badge -->
+        <div class="linkedin-box">
+          <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+          <div class="LI-profile-badge" data-version="v1" data-size="small" data-locale="en_US" data-type="vertical"
+            data-theme="dark" data-vanity="kiran-balaso-patil-851a43351">
+          </div>
+
+          <a class="linkedin-overlay" href="https://linkedin.com/in/kiran-balaso-patil-851a43351" target="_blank"
+            aria-label="Open LinkedIn Profile"></a>
+
+          <div class="linkedin-hint">View LinkedIn Profile</div>
+        </div>
+
+
+
+  </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section container animate-on-scroll" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="section-grid">
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <img src="images/Screenshot 2025-12-31 231938.png" alt="SmartCart" class="project-image" />
+
+        <div class="project-actions">
+          <a href="https://smartz-izv7.onrender.com/" class="project-action-icon" title="Live Demo">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="#https://github.com/KiranBalasoPatil3052006/smartz" class="project-action-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="project-info">
+          <h3 class="project-title">SmartCart</h3>
+          <p class="project-description">
+            Mobile-based in-mall shopping system with barcode scanning and
+            fast checkout ,it helps to reduce standing in the queue.Finally gives the bill of the
+            product after payment.
+          </p>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+        <img src="images/Screenshot 2025-12-31 232644.png" alt="Calculator" class="project-image" />
+
+        <div class="project-actions">
+          <a href="https://smartz-izv7.onrender.com" class="project-action-icon" title="Live Demo">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="#" class="project-action-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="project-info">
+          <h3 class="project-title">Calculator</h3>
+          <p class="project-description">
+            Clean and responsive calculator supporting all basic
+            arithmetic operations.
+          </p>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-card">
+        <img src="images/Screenshot 2025-12-31 232308.png" alt="Todo App" class="project-image" />
+
+        <div class="project-actions">
+          <a href="#" class="project-action-icon" title="Live Demo">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="#" class="project-action-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="project-info">
+          <h3 class="project-title">Todo App</h3>
+          <p class="project-description">
+            Task management app to add, mark as complete,mark as incomplete, delete one todo and remove all todos for
+            daily
+            activities.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project5.png" alt="Todo App" class="project-image" />
+
+        <div class="project-actions">
+          <a href="https://profound-tartufo-de12d5.netlify.app/" class="project-action-icon" title="Live Demo">
+            <i class="fas fa-globe"></i>
+          </a>
+
+        </div>
+
+        <div class="project-info">
+          <h3 class="project-title">Chit Management</h3>
+          <p class="project-description">
+            Tired of messy paperwork and payment confusion in traditional chit funds, I built a smart digital system
+            with secure admin login, easy plan and member tracking, instant paid/unpaid updates, and printable reports —
+            all packed into a clean, mobile-friendly interface that actually makes managing chit funds stress-free.
+          </p>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="project-card">
+        <img src="images/Screenshot 2025-12-31 231511.png" alt="Symposium" class="project-image" />
+
+        <div class="project-actions">
+          <a href="https://rpsitsymposium.netlify.app/" class="project-action-icon" title="Live Demo">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="#" class="project-action-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="project-info">
+          <h3 class="project-title">Symposium</h3>
+          <p class="project-description">
+            Developed for other college students for easily participate in the events,and also shows
+            every
+            department events without redirecting to another page.Support full responsive design.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/pingpong.png" alt="pingpong" class="project-image" />
+
+        <div class="project-actions">
+          <a href="https://ping-pong-gamee.netlify.app/" class="project-action-icon" title="Live Demo">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="#" class="project-action-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="project-info">
+          <h3 class="project-title">Pingpong Game</h3>
+          <p class="project-description">
+            Ping Pong Game inspired by the Instagram logo game, featuring smooth gameplay and a real-time leaderboard
+            using MongoDB to store and display player scores instantly.
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+  </section>
+
+
+  <!-- Skills Section (Centered) -->
+  <section class="section container animate-on-scroll" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="section-grid">
+      <!-- HTML5 -->
+      <div class="card">
+        <i class="card-icon devicon-html5-plain"></i>
+        <h3 class="card-title">HTML5</h3>
+        <p class="card-description">
+          The standard markup language for creating and structuring web
+          pages.
+        </p>
+        <a href="https://www.w3schools.com/html" class="card-button">Learn More</a>
+      </div>
+      <!-- CSS3 -->
+      <div class="card">
+        <i class="card-icon devicon-css3-plain"></i>
+        <h3 class="card-title">CSS3</h3>
+        <p class="card-description">
+          Style sheet language used for designing the presentation of web
+          pages.
+        </p>
+        <a href="https://www.w3schools.com/css/default.asp" class="card-button">Learn More</a>
+      </div>
+      <!-- JavaScript -->
+      <div class="card">
+        <i class="card-icon devicon-javascript-plain"></i>
+        <h3 class="card-title">JavaScript</h3>
+        <p class="card-description">
+          A programming language for creating dynamic and interactive web
+          content.
+        </p>
+        <a href="https://javascript.info/" class="card-button">Learn More</a>
+      </div>
+
+      <!-- NEW: Node.js -->
+      <div class="card">
+        <i class="card-icon devicon-nodejs-plain"></i>
+        <h3 class="card-title">Node.js</h3>
+        <p class="card-description">
+          A back-end JavaScript runtime environment for building fast and
+          scalable applications.
+        </p>
+        <a href="https://www.w3schools.com/nodejs/" class="card-button">Learn More</a>
+      </div>
+      <!-- NEW: Express.js -->
+      <div class="card">
+        <i class="card-icon devicon-express-original"></i>
+        <h3 class="card-title">Express.js</h3>
+        <p class="card-description">
+          A minimal and flexible Node.js web application framework for
+          building APIs and web apps.
+        </p>
+        <a href="https://www.w3schools.com/nodejs/nodejs_express.asp" class="card-button">Learn More</a>
+      </div>
+
+      <!-- Java -->
+      <div class="card">
+        <i class="card-icon devicon-java-plain"></i>
+        <h3 class="card-title">Java</h3>
+        <p class="card-description">
+          Java is a high-level, object-oriented programming language used to build secure & scalable
+          applications. <b>“Write Once, Run Anywhere”</b>
+        </p>
+        <a href="https://www.w3schools.com/java/default.asp" class="card-button">Learn More</a>
+      </div>
+      <!-- Python -->
+      <div class="card">
+        <i class="card-icon devicon-python-plain"></i>
+        <h3 class="card-title">Python</h3>
+        <p class="card-description">
+          High-level language for web development, data analysis,
+          scripting, and AI.
+        </p>
+        <a href="https://www.w3schools.com/python/default.asp" class="card-button">Learn More</a>
+      </div>
+      <!-- MongoDB -->
+      <div class="card">
+        <i class="card-icon devicon-mongodb-plain"></i>
+        <h3 class="card-title">MongoDB</h3>
+        <p class="card-description">
+          A NoSQL database using JSON-like documents for flexible data
+          storage.
+        </p>
+        <a href="https://www.w3schools.com/mongodb" class="card-button">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section (Centered + Figma) -->
+  <section class="section container animate-on-scroll" id="tools">
+    <h2 class="section-title">Tools</h2>
+    <div class="section-grid">
+      <!-- GitHub -->
+      <div class="card">
+        <i class="card-icon devicon-github-original"></i>
+        <h3 class="card-title">GitHub</h3>
+        <p class="card-description">
+          A web-based platform for hosting Git repositories and
+          collaboration.
+        </p>
+        <a href="https://github.com/KiranBalasoPatil3052006/" target="_blank" class="card-button">Visit</a>
+      </div>
+      <!-- Git Tool -->
+      <div class="card">
+        <i class="card-icon devicon-git-plain"></i>
+        <h3 class="card-title">Git</h3>
+        <p class="card-description">
+          A distributed version control system, crucial for managing code
+          history.
+        </p>
+        <a href="https://git-scm.com/downloads" target="_blank" class="card-button">Download</a>
+      </div>
+
+      <!-- VS Code -->
+      <div class="card">
+        <i class="card-icon devicon-visualstudio-plain"></i>
+        <h3 class="card-title">VS Code</h3>
+        <p class="card-description">
+          A free, powerful source-code editor developed by Microsoft for
+          all platforms.
+        </p>
+        <a href="https://code.visualstudio.com/download" target="_blank" class="card-button">Download</a>
+      </div>
+      <!-- NEW: Figma -->
+      <div class="card">
+        <i class="card-icon devicon-figma-plain"></i>
+        <h3 class="card-title">Figma</h3>
+        <p class="card-description">
+          A collaborative interface design tool for creating, testing, and
+          shipping designs.
+        </p>
+        <a href="https://www.figma.com/" target="_blank" class="card-button">Visit Figma</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hosting Platforms Section (Centered) -->
+  <section class="section container animate-on-scroll" id="hosting">
+    <h2 class="section-title">Hosting Platforms</h2>
+    <div class="section-grid">
+      <!-- Netlify -->
+      <div class="card">
+        <div class="card-icon hosting-logo">
+          <img style="width: 60px; height: 60px; align-items:center;" src="images/netlify.png" alt="">
+        </div>
+        <h3 class="card-title">Netlify</h3>
+        <p class="card-description">
+          The fastest way to deploy your modern, high-performance
+          front-end websites.
+        </p>
+        <a href="https://youtu.be/GKRO4_lbETk?si=jH0s_UULRwbbNwy_" class="card-button">How to Host</a>
+      </div>
+      <!-- GitHub Pages -->
+      <div class="card">
+        <div class="card-icon hosting-logo">
+          <i class="devicon-github-original" style="-webkit-text-fill-color: white"></i>
+        </div>
+        <h3 class="card-title">GitHub Pages</h3>
+        <p class="card-description">
+          Host your static sites for free, directly from your GitHub
+          repository.
+        </p>
+        <a href="https://youtu.be/96Mz6EQa09Q?si=rv2PHCWPxL66FoSt" class="card-button">How to Host</a>
+      </div>
+      <!-- Render -->
+      <div class="card">
+        <div class="card-icon hosting-logo">
+          <img style="height: 70px;  " src="images/Render logo - White.png" alt="">
+        </div>
+        <h3 class="card-title">Render</h3>
+        <p class="card-description">
+          A unified cloud platform to build and run all your backend apps
+          and databases.
+        </p>
+        <a href="" class="card-button">How to Host</a>
+      </div>
+      <!-- MongoDB Atlas -->
+      <div class="card">
+        <div class="card-icon hosting-logo">
+          <img style="height: 100px; width: 135px;   " src="images/mongodb.png" alt="">
+        </div>
+        <h3 class="card-title" style="margin-top: 30px ;">MongoDB Atlas</h3>
+        <p class="card-description">
+          A powerful, fully-managed cloud database service for your
+          MongoDB applications.
+        </p>
+        <a href="https://youtu.be/d8pLU4pLe-Y?si=f47jyASzAQL5UbpN" class="card-button">How to Host</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (No Contact Form) -->
+  <footer class="footer container" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="social-links">
+      <a href="mailto:kiranbalasopatil@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/kiran-balaso-patil-851a43351/" target="_blank" aria-label="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/KiranBalasoPatil3052006" target="_blank" aria-label="GitHub"><i
+          class="fab fa-github"></i></a>
+      <a href="tel:+8610641610" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
+      <a href="https://www.instagram.com/_kiranpatil_5/" target="_blank" aria-label="Instagram"><i
+          class="fab fa-instagram"></i></a>
+
+
+    </div>
+    <p class="copyright">© 2025 Kiran Patil. All rights reserved.</p>
+  </footer>
+  </main>
+  </div>
+
+  <!-- NEW: Floating Contact Button -->
+  <div class="floating-contact-btn" id="floating-contact-btn">
+    <i class="fas fa-envelope"></i>
+  </div>
+
+  <!-- NEW: Contact Form Popup -->
+  <div class="popup-overlay" id="contact-popup-overlay">
+    <div class="popup-content">
+      <button class="popup-back-btn" id="popup-back-btn">&times;</button>
+      <!-- Contact Container is now INSIDE the popup -->
+      <div class="contact-container animate-on-scroll">
+        <h2 class="section-title" style="margin-bottom: 30px; font-size: 30px">
+          Want to work with me?
+        </h2>
+        <div class="success-message" id="success-message"></div>
+
+        <!-- 
+                  UPDATED FORM TAG:
+                  - Added method="POST"
+                  - Added action="YOUR_FORMSPREE_URL" (REPLACE THIS)
+                  - Kept the id="contact-form" for the JavaScript to find
+                -->
+        <form class="contact-form" id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="tel" name="mobile" placeholder="Your Mobile Number" required />
+          <textarea name="message" placeholder="Tell me a little about your project..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script>
+
+    (function () {
+      emailjs.init("FN7eVtCPlRnbzYduu");
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        "service_c26aquo",
+        "template_kexqgy1",
+        this
+      )
+        .then(function () {
+          alert("Message sent successfully!");
+          document.getElementById("contact-form").reset();
+        }, function (error) {
+          alert("Failed to send message.");
+          console.log(error);
+        });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const body = document.body;
+      const mainContent = document.querySelector(".main-content");
+
+      // --- Preloader Logic ---
+      const preloader = document.getElementById("preloader");
+      const preloaderText = document.getElementById("preloader-text");
+      const preloaderForm = document.getElementById("preloader-form");
+      const visitorNameInput = document.getElementById("visitor-name");
+      const preloaderSkipBtn = document.getElementById("preloader-skip-btn");
+      const preloaderWelcomeText = "Hey, I'm Kiran.";
+      let preloaderCharIndex = 0;
+
+      function typePreloaderText() {
+        if (preloaderCharIndex < preloaderWelcomeText.length) {
+          preloaderText.textContent +=
+            preloaderWelcomeText.charAt(preloaderCharIndex);
+          preloaderCharIndex++;
+          setTimeout(typePreloaderText, 100);
+        } else {
+          preloaderForm.classList.add("visible");
+          visitorNameInput.focus();
+          setTimeout(() => {
+            preloaderSkipBtn.classList.add("visible");
+          }, 3000);
+        }
+      }
+      function proceedToSite() {
+        preloader.classList.add("fade-out");
+        mainContent.classList.add("visible");
+        body.classList.remove("preloader-active");
+
+        // ✅ SHOW NAVBAR
+        document.getElementById("header").classList.add("nav-visible");
+
+        setTimeout(() => {
+          preloader.style.display = "none";
+          startMainContentAnimations();
+        }, 700);
+      }
+
+      visitorNameInput.addEventListener("input", () => {
+        if (visitorNameInput.classList.contains("input-error")) {
+          visitorNameInput.classList.remove("input-error");
+        }
+      });
+
+      preloaderForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const visitorName = visitorNameInput.value.trim();
+        if (visitorName !== "") {
+          visitorNameInput.classList.remove("input-error");
+          proceedToSite();
+        } else {
+          visitorNameInput.classList.add("input-error");
+        }
+      });
+
+      preloaderSkipBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        proceedToSite();
+      });
+
+      typePreloaderText();
+
+      // --- Meteor Shower Background ---
+      const canvas = document.getElementById("meteorCanvas");
+      const ctx = canvas.getContext("2d");
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+      let animationFrameId;
+
+      window.addEventListener("resize", () => {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+        createStars();
+      });
+
+      let stars = [];
+      let meteors = [];
+
+      function createStars() {
+        stars = Array.from({ length: 130 }, () => ({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          size: Math.random() * 1.3,
+          // MODIFICATION: Increased speed
+          speed: 0.1 + Math.random() * 0.2,
+        }));
+      }
+
+      function createMeteor() {
+        const angle = Math.PI / 4;
+        const speedMagnitude = 4 + Math.random() * 3;
+        const length = 300 + Math.random() * 300;
+        return {
+          x: -50,
+          y: Math.random() * height * 0.2 - 50,
+          length: length,
+          speedX: speedMagnitude * Math.cos(angle),
+          speedY: speedMagnitude * Math.sin(angle),
+          opacity: 0.7 + Math.random() * 0.3,
+          color:
+            Math.random() > 0.5 ? "rgba(173,216,230,1)" : "rgba(0,191,255,1)",
+        };
+      }
+
+      function spawnMeteors() {
+        if (meteors.length < 5) {
+          const count = 1 + Math.floor(Math.random() * 2);
+          for (let i = 0; i < count; i++) {
+            meteors.push(createMeteor());
+          }
+        }
+      }
+
+      function drawStars() {
+        ctx.fillStyle = "white";
+        stars.forEach((star) => {
+          ctx.beginPath();
+          ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+          ctx.fill();
+          star.y += star.speed;
+          if (star.y > height + star.size) {
+            star.y = 0 - star.size;
+            star.x = Math.random() * width;
+          }
+        });
+      }
+
+      function drawMeteors() {
+        meteors.forEach((meteor, index) => {
+          const tailEndX =
+            meteor.x -
+            (meteor.speedX /
+              Math.sqrt(meteor.speedX ** 2 + meteor.speedY ** 2)) *
+            meteor.length;
+          const tailEndY =
+            meteor.y -
+            (meteor.speedY /
+              Math.sqrt(meteor.speedX ** 2 + meteor.speedY ** 2)) *
+            meteor.length;
+          const gradient = ctx.createLinearGradient(
+            meteor.x,
+            meteor.y,
+            tailEndX,
+            tailEndY
+          );
+          const headColor = meteor.color.replace(
+            /,1\)/,
+            `,${meteor.opacity})`
+          );
+          const tailColor = meteor.color.replace(/,1\)/, ",0)");
+          gradient.addColorStop(0, headColor);
+          gradient.addColorStop(1, tailColor);
+          ctx.shadowBlur = 15;
+          ctx.shadowColor = meteor.color.replace(
+            /,1\)/,
+            `,${meteor.opacity * 0.5})`
+          );
+          ctx.beginPath();
+          ctx.strokeStyle = gradient;
+          ctx.lineWidth = 3.5;
+          ctx.moveTo(meteor.x, meteor.y);
+          ctx.lineTo(tailEndX, tailEndY);
+          ctx.stroke();
+          ctx.shadowBlur = 0;
+          ctx.shadowColor = "transparent";
+          meteor.x += meteor.speedX;
+          meteor.y += meteor.speedY;
+          if (
+            meteor.x > width + meteor.length ||
+            meteor.y > height + meteor.length
+          ) {
+            meteors.splice(index, 1);
+          }
+        });
+      }
+
+      function animateCanvas() {
+        if (!body.classList.contains("preloader-active")) {
+          ctx.clearRect(0, 0, width, height);
+          drawStars();
+          drawMeteors();
+        }
+        animationFrameId = requestAnimationFrame(animateCanvas);
+      }
+
+      // --- Function to start animations AFTER preloader ---
+      function startMainContentAnimations() {
+        // --- Hero Animations ---
+        const nameEl = document.getElementById("hero-name-reveal");
+        const roleEl = document.getElementById("hero-role-typewriter");
+
+        function animateNameFromCenter() {
+          const text = "Kiran Balaso Patil";
+          const letters = text.split("");
+          nameEl.innerHTML = "";
+          const spans = letters.map((letter) => {
+            const span = document.createElement("span");
+            span.textContent = letter === " " ? "\u00A0" : letter;
+            nameEl.appendChild(span);
+            return span;
+          });
+          const mid = Math.floor(spans.length / 2);
+          let delay = 0;
+          for (let i = 0; i <= mid; i++) {
+            const leftIndex = mid - i;
+            const rightIndex = mid + i;
+            if (leftIndex >= 0) {
+              setTimeout(() => {
+                if (spans[leftIndex]) spans[leftIndex].style.opacity = "1";
+              }, delay);
+            }
+            if (rightIndex < spans.length && rightIndex !== leftIndex) {
+              setTimeout(() => {
+                if (spans[rightIndex]) spans[rightIndex].style.opacity = "1";
+              }, delay);
+            }
+            delay += 90;
+          }
+        }
+
+        class Typewriter {
+          constructor(element, roles) {
+            this.el = element;
+            this.roles = roles;
+            this.loopNum = 0;
+            this.txt = "";
+            this.isDeleting = false;
+            this.tick();
+          }
+          tick() {
+            const i = this.loopNum % this.roles.length;
+            const fullTxt = this.roles[i];
+            let typeSpeed = 150;
+            if (this.isDeleting) {
+              this.txt = fullTxt.substring(0, this.txt.length - 1);
+              typeSpeed = 75;
+            } else {
+              this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+            this.el.innerHTML = `${this.txt}<span class="typewriter-cursor"></span>`;
+            if (!this.isDeleting && this.txt === fullTxt) {
+              typeSpeed = 2000;
+              this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === "") {
+              this.isDeleting = false;
+              this.loopNum++;
+              typeSpeed = 500;
+            }
+            setTimeout(() => this.tick(), typeSpeed);
+          }
+        }
+
+        setTimeout(() => {
+          animateNameFromCenter();
+          // UPDATED: New typewriter roles
+          new Typewriter(roleEl, [
+            "Aspiring Full Stack Developer",
+            "Front-end Developer",
+            "AI Prompter",
+          ]);
+        }, 100);
+
+        // --- Animate on Scroll ---
+        const scrollObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+          scrollObserver.observe(el);
+        });
+      }
+
+      // --- Initialize Canvas ---
+      createStars();
+      setInterval(spawnMeteors, 10000);
+      spawnMeteors();
+      animateCanvas();
+
+      // --- Mobile Nav ---
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu-mobile");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-menu-mobile a").forEach((link) => {
+        link.addEventListener("click", () => {
+          body.classList.remove("nav-open");
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+
+      // --- NEW: Popup Contact Form Logic ---
+      const openBtn = document.getElementById("floating-contact-btn");
+      const closeBtn = document.getElementById("popup-back-btn");
+      const popup = document.getElementById("contact-popup-overlay");
+
+      openBtn.addEventListener("click", () => {
+        popup.classList.add("visible");
+        body.classList.add("popup-open"); // Lock scrolling
+      });
+
+      function closePopup() {
+        popup.classList.remove("visible");
+        body.classList.remove("popup-open"); // Unlock scrolling
+      }
+
+      closeBtn.addEventListener("click", closePopup);
+      popup.addEventListener("click", (e) => {
+        // Close if clicking on the overlay itself, not the content
+        if (e.target === popup) {
+          closePopup();
+        }
+      });
+
+      // --- UPDATED: Contact Form (now inside popup) with AJAX (fetch) ---
+      const contactForm = document.getElementById("contact-form");
+      const successMessage = document.getElementById("success-message");
+
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission (page reload)
+
+        const form = e.target;
+        const formData = new FormData(form);
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
+
+        // Disable button and show sending state
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+
+        fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            Accept: "application/json", // Formspree recommends this header
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              // SUCCESS! Show the animation
+              contactForm.classList.add("hidden");
+              successMessage.classList.add("visible");
+              successMessage.innerHTML = ""; // Clear previous messages
+              const messageText = "We will be in touch soon";
+              const characters = messageText.split("");
+              const middleIndex = Math.floor(characters.length / 2);
+              characters.forEach((char, index) => {
+                const span = document.createElement("span");
+                span.textContent = char === " " ? "\u00A0" : char;
+                successMessage.appendChild(span);
+                const delay = Math.abs(index - middleIndex) * 50;
+                setTimeout(() => {
+                  span.style.opacity = "1";
+                  span.style.transform = "translateY(0)";
+                }, delay);
+              });
+
+              // After animation, reset the form and button
+              setTimeout(() => {
+                successMessage.classList.remove("visible");
+                setTimeout(() => {
+                  form.reset();
+                  contactForm.classList.remove("hidden");
+                  submitButton.disabled = false;
+                  submitButton.textContent = originalButtonText;
+                  successMessage.innerHTML = "";
+                }, 500);
+              }, 4000);
+            } else {
+              // ERROR from Formspree (e.g., validation error)
+              response.json().then((data) => {
+                // Show an error message
+                successMessage.innerHTML = `<span>Oops! ${data.error || "Something went wrong."
+                  }</span>`;
+                const span = successMessage.querySelector("span");
+                span.style.opacity = "1";
+                span.style.transform = "translateY(0)";
+                successMessage.classList.add("visible");
+
+                // Re-enable the button
+                submitButton.disabled = false;
+                submitButton.textContent = originalButtonText;
+
+                // Hide error after a few seconds
+                setTimeout(() => {
+                  successMessage.classList.remove("visible");
+                  setTimeout(() => {
+                    successMessage.innerHTML = "";
+                  }, 500);
+                }, 4000);
+              });
+            }
+          })
+          .catch((error) => {
+            // NETWORK ERROR
+            successMessage.innerHTML =
+              "<span>Network error. Please try again.</span>";
+            const span = successMessage.querySelector("span");
+            span.style.opacity = "1";
+            span.style.transform = "translateY(0)";
+            successMessage.classList.add("visible");
+
+            // Re-enable the button
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+
+            // Hide error after a few seconds
+            setTimeout(() => {
+              successMessage.classList.remove("visible");
+              setTimeout(() => {
+                successMessage.innerHTML = "";
+              }, 500);
+            }, 4000);
+          });
+      });
+
+      // --- Sticky Header ---
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (
+          !body.classList.contains("nav-open") &&
+          !body.classList.contains("popup-open")
+        ) {
+          header.classList.toggle("scrolled", window.scrollY > 50);
+        }
+      });
+    });
+
+    // ===== PROJECT SHOWCASE COUNTER =====
+    // ===== PROJECT SHOWCASE COUNTER (SCROLL TRIGGERED) =====
+    const showcaseSection = document.getElementById("project-showcase");
+    const showcaseCounters = document.querySelectorAll(".showcase-number");
+
+    let showcaseAnimated = false;
+
+    const animateShowcaseCounters = () => {
+      if (showcaseAnimated) return;
+      showcaseAnimated = true;
+
+      showcaseCounters.forEach((counter) => {
+        const target = Number(counter.dataset.target);
+        let current = 0;
+        const duration = 1200; // total animation time (ms)
+        const startTime = performance.now();
+
+        const update = (now) => {
+          const progress = Math.min((now - startTime) / duration, 1);
+          current = Math.floor(progress * target);
+          counter.textContent = current;
+
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            counter.textContent = target + "+";
+          }
+        };
+
+        requestAnimationFrame(update);
+      });
+    };
+
+    const showcaseObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateShowcaseCounters();
+            showcaseObserver.disconnect(); // run only once
+          }
+        });
+      },
+      {
+        threshold: 0.4, // 40% visible before starting
+      }
+    );
+
+    showcaseObserver.observe(showcaseSection);
+
+    const ufo = document.getElementById("ufo");
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    let posX = mouseX;
+    let posY = mouseY;
+
+    let lastMoveTime = Date.now();
+    let idleOffset = 0;
+
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      lastMoveTime = Date.now();
+    });
+
+    function animate() {
+      const now = Date.now();
+      const isIdle = now - lastMoveTime > 300; // 300ms without movement
+
+      // Smooth follow
+      posX += (mouseX - posX) * 0.08;
+      posY += (mouseY - posY) * 0.08;
+
+      // Idle floating motion
+      if (isIdle) {
+        idleOffset += 0.05;
+        posY += Math.sin(idleOffset) * 0.8;
+        posX += Math.cos(idleOffset * 0.7) * 0.5;
+      }
+
+      // Rotation based on movement
+      const rotateX = (posY - mouseY) * 0.15;
+      const rotateY = (mouseX - posX) * 0.15;
+
+      ufo.style.transform = `
+      translate(${posX - 110}px, ${posY - 110}px)
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+    `;
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    let hasSpoken = false;
+
+    function speakGreeting() {
+      if (hasSpoken) return;
+      hasSpoken = true;
+
+      const message = new SpeechSynthesisUtterance(
+        "Hi, I'm Kiran. What's your name?"
+      );
+
+      message.lang = "en-US";
+      message.rate = 0.95;
+      message.pitch = 1.1;
+      message.volume = 1;
+
+      // Pick a natural voice if available
+      const voices = window.speechSynthesis.getVoices();
+      const preferred = voices.find(v =>
+        v.name.toLowerCase().includes("google") ||
+        v.name.toLowerCase().includes("female")
+      );
+
+      if (preferred) message.voice = preferred;
+
+      window.speechSynthesis.speak(message);
+    }
+
+    // Wait for user interaction
+    function enableVoice() {
+      document.addEventListener("click", speakGreeting, { once: true });
+      document.addEventListener("touchstart", speakGreeting, { once: true });
+      document.addEventListener("keydown", speakGreeting, { once: true });
+    }
+
+    // Start listening
+    enableVoice();
+
+    //nav bar animation foro the mobile
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.getElementById("header");
+      const hero = document.getElementById("hero");
+
+      const heroObserver = new IntersectionObserver(
+        ([entry]) => {
+          if (window.innerWidth <= 768) {
+            if (entry.isIntersecting) {
+              // Hero visible → compact
+              header.classList.add("nav-compact");
+              header.classList.remove("nav-expanded");
+            } else {
+              // Hero out of view → expanded
+              header.classList.add("nav-expanded");
+              header.classList.remove("nav-compact");
+            }
+          }
+        },
+        {
+          threshold: 0.6
+        }
+      );
+
+      heroObserver.observe(hero);
+    });
+  </script>
+</body>
+
+</html>
