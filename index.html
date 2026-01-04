@@ -548,24 +548,25 @@
       <button class="popup-back-btn" id="popup-back-btn">&times;</button>
       <!-- Contact Container is now INSIDE the popup -->
       <div class="contact-container animate-on-scroll">
-        <h2 class="section-title" style="margin-bottom: 30px; font-size: 30px">
+        <h2 class="work " >
           Want to work with me?
         </h2>
         <div class="success-message" id="success-message"></div>
 
-        <!-- 
-                  UPDATED FORM TAG:
-                  - Added method="POST"
-                  - Added action="YOUR_FORMSPREE_URL" (REPLACE THIS)
-                  - Kept the id="contact-form" for the JavaScript to find
-                -->
-        <form class="contact-form" id="contact-form">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <input type="tel" name="mobile" placeholder="Your Mobile Number" required />
-          <textarea name="message" placeholder="Tell me a little about your project..." required></textarea>
-          <button type="submit">Send Message</button>
+        <form class="contact-form" id="contact-form" autocomplete="off">
+
+          <input type="text" name="name" placeholder="Your Name" required disabled />
+
+          <input type="email" name="email" placeholder="Your Email" required disabled />
+
+          <input type="tel" name="mobile" placeholder="Your Mobile Number" required disabled />
+
+          <textarea name="message" placeholder="Tell me a little about your project..." required disabled></textarea>
+
+          <button type="submit" disabled>Send Message</button>
+
         </form>
+
 
       </div>
     </div>
@@ -575,7 +576,7 @@
 
   <script src="script.js">
 
-   
+
   </script>
 </body>
 
