@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://YOUR_BACKEND_URL";
+const BACKEND_URL = "https://visitor-stats-backend.onrender.com";
 
 /* Call when name is entered */
 function sendVisitorName(name) {
