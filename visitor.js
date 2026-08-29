@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://visitor-stats-backend.onrender.com";
+const BACKEND_URL = "https://kiran-portfolio-backend.vercel.app";
 
 /* Elements */
 const form = document.getElementById("preloader-form");
